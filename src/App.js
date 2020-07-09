@@ -1,16 +1,22 @@
 import React from 'react';
 import './App.css';
+import {ToastContainer} from 'react-toastify';
 
 import Links from './components/Links';
-import LinkForm from './components/LinkForm';
+
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
+
+
+
   return (
-    <div className="container p-4">
+    <div className="container d-flex justify-content-center">
       <div className="row">
-        <LinkForm />
         <Links />
       </div>
+      <ToastContainer />
     </div>
   );
 }
